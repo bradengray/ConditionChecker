@@ -22,55 +22,57 @@
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="JJl-Aj-Dnu">
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="mYZ-Yu-075">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kfy-mw-6qd">
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patient Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAx-rK-jWm">
                                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="27"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="47"/>
+                                                </variation>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YEF-nu-ak5">
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="32" id="Hd3-Ru-8CQ"/>
                                                 </constraints>
                                                 <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="28"/>
+                                                </variation>
                                                 <connections>
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Ckj-io-T6D"/>
                                                 </connections>
                                             </textField>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="65" id="BIB-zO-iQN"/>
-                                            <constraint firstItem="YEF-nu-ak5" firstAttribute="centerX" secondItem="mYZ-Yu-075" secondAttribute="centerX" id="Ifz-T1-cJn"/>
-                                            <constraint firstItem="BAx-rK-jWm" firstAttribute="centerX" secondItem="mYZ-Yu-075" secondAttribute="centerX" id="Why-06-yAd"/>
-                                        </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="5QQ-qc-jyy">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Jte-0d-rSk">
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patient ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71A-3Z-rIK">
                                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="27"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="47"/>
+                                                </variation>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P6J-Yq-qGw">
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="32" id="Vzk-8L-xZ2"/>
                                                 </constraints>
                                                 <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="28"/>
+                                                </variation>
                                                 <connections>
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="5LQ-Jq-aHA"/>
                                                 </connections>
                                             </textField>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="65" id="LZD-Tx-sZM"/>
-                                            <constraint firstItem="P6J-Yq-qGw" firstAttribute="centerX" secondItem="5QQ-qc-jyy" secondAttribute="centerX" id="Ry6-mM-yw2"/>
-                                            <constraint firstItem="71A-3Z-rIK" firstAttribute="centerX" secondItem="5QQ-qc-jyy" secondAttribute="centerX" id="efY-Lz-xwM"/>
-                                        </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpa-Qz-Db7">
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -78,24 +80,26 @@
                                         <state key="normal" title="Take Test">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="47"/>
+                                        </variation>
                                         <connections>
                                             <segue destination="Z1P-de-cWU" kind="show" identifier="Test" id="GMH-kK-tti"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="5QQ-qc-jyy" firstAttribute="width" secondItem="JJl-Aj-Dnu" secondAttribute="width" id="B9L-LG-nJe"/>
-                                    <constraint firstItem="dpa-Qz-Db7" firstAttribute="width" secondItem="JJl-Aj-Dnu" secondAttribute="width" id="Pul-rr-Xmp"/>
-                                    <constraint firstItem="mYZ-Yu-075" firstAttribute="width" secondItem="JJl-Aj-Dnu" secondAttribute="width" id="cie-vc-2g4"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="552" id="E6l-ky-m9x"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="400" id="XIY-rR-omY"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="JJl-Aj-Dnu" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="9:16" id="YZI-mG-VBz"/>
-                            <constraint firstItem="JJl-Aj-Dnu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="erY-Gm-Qya"/>
-                            <constraint firstItem="JJl-Aj-Dnu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tvE-Ps-0Bg"/>
-                            <constraint firstItem="JJl-Aj-Dnu" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="3:5" id="ukr-jF-2tF"/>
+                            <constraint firstItem="JJl-Aj-Dnu" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="3:4" priority="750" id="8fB-Vu-b8H"/>
+                            <constraint firstItem="JJl-Aj-Dnu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8p4-Pq-dpJ"/>
+                            <constraint firstItem="JJl-Aj-Dnu" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="3:4" priority="750" id="bdd-Iv-Jji"/>
+                            <constraint firstItem="JJl-Aj-Dnu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vwD-KS-JAg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Condition Checker" id="q2g-bd-4zq"/>
@@ -123,6 +127,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="33K-zQ-UCq" userLabel="containerView">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="552" id="TMT-rM-VS7"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="400" id="VoT-nk-eZQ"/>
+                                </constraints>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yin-As-LHV">
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="27"/>
@@ -133,20 +144,53 @@
                                     <action selector="nextButtonTouched:" destination="Z1P-de-cWU" eventType="touchUpInside" id="ujO-SR-hI8"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="33K-zQ-UCq" userLabel="containerView">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="33K-zQ-UCq" firstAttribute="top" secondItem="8gD-mP-BtW" secondAttribute="bottom" constant="8" id="68i-fr-9xK"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="yin-As-LHV" secondAttribute="trailing" constant="8" id="6EZ-RS-uld"/>
-                            <constraint firstItem="yin-As-LHV" firstAttribute="leading" secondItem="WMh-eW-vyv" secondAttribute="leadingMargin" constant="8" id="7YA-5p-xub"/>
-                            <constraint firstItem="yin-As-LHV" firstAttribute="top" secondItem="33K-zQ-UCq" secondAttribute="bottom" constant="16" id="Cle-Ga-Ftb"/>
-                            <constraint firstItem="gh1-b7-NyT" firstAttribute="top" secondItem="yin-As-LHV" secondAttribute="bottom" constant="16" id="afJ-CO-UF4"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="33K-zQ-UCq" secondAttribute="trailing" constant="8" id="as3-Uf-UNH"/>
-                            <constraint firstItem="33K-zQ-UCq" firstAttribute="leading" secondItem="WMh-eW-vyv" secondAttribute="leadingMargin" constant="8" id="euL-YJ-7MZ"/>
+                            <constraint firstItem="33K-zQ-UCq" firstAttribute="centerY" secondItem="WMh-eW-vyv" secondAttribute="centerY" id="1J5-Wr-JSU"/>
+                            <constraint firstItem="33K-zQ-UCq" firstAttribute="leading" secondItem="WMh-eW-vyv" secondAttribute="leadingMargin" constant="24" id="7ww-1Q-vAE">
+                                <variation key="heightClass=regular-widthClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="33K-zQ-UCq" firstAttribute="height" secondItem="WMh-eW-vyv" secondAttribute="height" multiplier="3:4" priority="750" id="D6m-Ps-byb"/>
+                            <constraint firstItem="yin-As-LHV" firstAttribute="width" secondItem="33K-zQ-UCq" secondAttribute="width" id="LEO-O0-dvS"/>
+                            <constraint firstItem="33K-zQ-UCq" firstAttribute="height" secondItem="WMh-eW-vyv" secondAttribute="height" multiplier="5:9" id="OL3-ej-Dk9"/>
+                            <constraint firstItem="33K-zQ-UCq" firstAttribute="centerX" secondItem="WMh-eW-vyv" secondAttribute="centerX" id="TFN-4t-FNn"/>
+                            <constraint firstItem="33K-zQ-UCq" firstAttribute="width" secondItem="WMh-eW-vyv" secondAttribute="width" multiplier="3:4" priority="750" id="jaW-H4-ozB"/>
+                            <constraint firstItem="yin-As-LHV" firstAttribute="centerX" secondItem="33K-zQ-UCq" secondAttribute="centerX" id="kTp-Va-feb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="33K-zQ-UCq" secondAttribute="trailing" constant="24" id="ujY-Pw-YEe">
+                                <variation key="heightClass=regular-widthClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="yin-As-LHV" firstAttribute="top" secondItem="33K-zQ-UCq" secondAttribute="bottom" constant="10" id="wxh-9n-DQO">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="7ww-1Q-vAE"/>
+                                <exclude reference="D6m-Ps-byb"/>
+                                <exclude reference="OL3-ej-Dk9"/>
+                                <exclude reference="TFN-4t-FNn"/>
+                                <exclude reference="ujY-Pw-YEe"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="OL3-ej-Dk9"/>
+                                <include reference="TFN-4t-FNn"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="7ww-1Q-vAE"/>
+                                <include reference="D6m-Ps-byb"/>
+                                <include reference="ujY-Pw-YEe"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="kTp-Va-feb"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="containerView" destination="33K-zQ-UCq" id="Vtp-VK-wgw"/>
