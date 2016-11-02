@@ -12,14 +12,15 @@ import CoreData
 
 public class Person: NSManagedObject {
     
+    //Returns Person object from CoreDAta
     class func personWithInfo(info: Dictionary<String, Any?>, inManagedObjectContext context: NSManagedObjectContext)->Person? {
-        let uniqueID = info[constants.patientIDKey]
+        let uniqueID = info[constants.info.patientIDKey]
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Person")
         request.predicate = NSPredicate(format: "unique == %@", uniqueID as! CVarArg)
         if let person = (try? context.fetch(request))?.first as? Person {
             return person
         } else if let person = NSEntityDescription.insertNewObject(forEntityName: "Person", into: context) as? Person {
-            person.name = info[constants.patientNameKey] as! String?
+            person.name = info[constants.info.patientNameKey] as! String?
             person.unique = uniqueID as! String?
             return person
         }

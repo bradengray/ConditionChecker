@@ -10,6 +10,6 @@ import UIKit
 
 class TestResultsView: UIView {
 
-    @IBOutlet weak var resultsLabel: UILabel!
+    @IBOutlet weak var resultsLabel: UILabel! //Public variable for changing results label
 
 }

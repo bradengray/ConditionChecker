@@ -8,9 +8,18 @@
 
 import Foundation
 
+//Public Struct for holding dictionary constants
 struct constants {
-    static let patientNameKey = "patientName"
-    static let patientIDKey = "patientID"
-    static let conditionKey = "condition"
-    static let resultsKey = "results"
+    //Constants for info dictionary
+    struct info {
+        static let patientNameKey = "patientName"
+        static let patientIDKey = "patientID"
+        static let conditionKey = "condition"
+        static let resultsKey = "results"
+    }
+    
+    //Constants for Condition names
+    struct conditions {
+        static let todds = "Todd's Syndrome"
+    }
 }

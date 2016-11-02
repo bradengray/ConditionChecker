@@ -8,6 +8,7 @@
 
 import UIKit
 
+//This class holds the colors I was using. I do not like most of them, but I just chose some to make the app work
 class ColorScheme {
     class func blueColor()->UIColor {
         return UIColor.init(colorLiteralRed: 0.19, green: 0.56, blue: 0.7, alpha: 1.0)

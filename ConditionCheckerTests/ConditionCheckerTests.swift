@@ -71,13 +71,15 @@ class ConditionCheckerTests: XCTestCase {
         let testBrain = TestBrain.init(test: test)
         
         //Give the correct answers for half of the questions and check to make sure that the brain does not give a result until all the questions are answered
-        var accumulatedAnswers = 0
-        while accumulatedAnswers < test.questions.count {
+        var accumulatedAnswers = 0.0
+        var correctAnswers = 0.0
+        while Int(accumulatedAnswers) < test.questions.count {
             let question = testBrain.getQuestion()
-            if accumulatedAnswers%2 == 0 {
+            if Int(accumulatedAnswers)%2 == 0 {
                 for answer in (question.question?.answers)! {
                     if answer.isCorrect! {
                         testBrain.userChoseAnswer(answer: answer.text!)
+                        correctAnswers = correctAnswers + 1
                     }
                 }
             } else {
@@ -89,6 +91,6 @@ class ConditionCheckerTests: XCTestCase {
             }
             accumulatedAnswers = accumulatedAnswers + 1
         }
-        XCTAssertEqual(testBrain.results, 50)
+        XCTAssertEqual(testBrain.results, correctAnswers/accumulatedAnswers * 100)
     }
 }

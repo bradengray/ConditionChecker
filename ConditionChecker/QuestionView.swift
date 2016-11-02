@@ -8,10 +8,13 @@
 
 import UIKit
 
+//Delegate for Question View
 protocol QuestionViewDelegate {
+    //Notifies delegate that a question has been answered
     func answer(answer : String)
 }
 
 class QuestionView : UIView {
+    //Holds delegate object
     var delegate : QuestionViewDelegate?
 }

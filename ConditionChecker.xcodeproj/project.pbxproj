@@ -29,6 +29,7 @@
 		F26D54EC1DC50405001B9B25 /* YesOrNoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F26D54EB1DC50405001B9B25 /* YesOrNoView.xib */; };
 		F26D54EE1DC512C9001B9B25 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26D54ED1DC512C9001B9B25 /* QuestionView.swift */; };
 		F28577131DC9861C0091E1C5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28577121DC9861B0091E1C5 /* Constants.swift */; };
+		F28577151DCA9B390091E1C5 /* TestPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28577141DCA9B390091E1C5 /* TestPicker.swift */; };
 		F2CB997F1DC6DD3500688880 /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CB997E1DC6DD3500688880 /* ColorScheme.swift */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,7 @@
 		F26D54EB1DC50405001B9B25 /* YesOrNoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YesOrNoView.xib; sourceTree = "<group>"; };
 		F26D54ED1DC512C9001B9B25 /* QuestionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		F28577121DC9861B0091E1C5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F28577141DCA9B390091E1C5 /* TestPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPicker.swift; sourceTree = "<group>"; };
 		F2CB997E1DC6DD3500688880 /* ColorScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorScheme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,6 +178,7 @@
 			children = (
 				F24A2CE11DC3F299000D258B /* Test.swift */,
 				F24A2CE31DC3F2E2000D258B /* ToddsSyndromeTest.swift */,
+				F28577141DCA9B390091E1C5 /* TestPicker.swift */,
 				F24A2CE51DC400A8000D258B /* TestBrain.swift */,
 				F28577121DC9861B0091E1C5 /* Constants.swift */,
 			);
@@ -345,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F24A2CB71DC3DF16000D258B /* ConditionChecker.xcdatamodeld in Sources */,
+				F28577151DCA9B390091E1C5 /* TestPicker.swift in Sources */,
 				F243950D1DC81E3C0084A7A2 /* TestResultsView.swift in Sources */,
 				F24A2CE41DC3F2E2000D258B /* ToddsSyndromeTest.swift in Sources */,
 				F24A2CB11DC3DF16000D258B /* ViewController.swift in Sources */,

@@ -9,8 +9,11 @@
 import Foundation
 
 class ToddsSyndromeTest: Test {
+    
+    //Mark: Initialization
     override init() {
         super.init()
+        //Create questions for this Subclass
         self.questions = [
             question(text: "What is the patient's sex?", answers: [answer(text: "Male", isCorrect: true), answer(text:"Female", isCorrect: false)]),
             question(text: "Is the patient more than 15 years old?", answers: [answer(text: "Yes", isCorrect: true), answer(text:"No", isCorrect: false)]),
